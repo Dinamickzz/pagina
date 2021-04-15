@@ -41,6 +41,10 @@ li{
 .objeto{
 	margin-right:30px;
 }
+.objeto:hover{
+	margin-right:30px;
+	animation: roll 0.4s;
+}
 .separador{
 	display:inline-flex;
 	position: absolute;
@@ -65,10 +69,21 @@ li{
 	top:12px;
 }
 .juegos{
+	text-decoration:none;
 	color:white;
 	font-size:22px;
 	font-family:copperplate gothic light;
 	font-weight:bold;
+	
+}
+
+li a:hover{
+	color:#FF0000;
+	box-shadow:10px 10px 10px #000;
+}
+li a i:hover{
+	color:#FF0000;
+	box-shadow:10px 10px 10px #000;
 }
 
 
@@ -154,4 +169,23 @@ header .overlay {
 
 .pb-row {
         margin-bottom: 10px;
+}
+
+/* BOTONNNNN */
+
+
+
+.logo{
+	position:fixed;
+	width:18%;
+	height:30%;
+	padding: 0px 30px;
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
